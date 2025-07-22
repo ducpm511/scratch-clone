@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="navbar">
+      <div class="container navbar-content">
+        <div class="navbar-left">
+          <img
+            src="https://scratch.mit.edu/images/logo_sm.png"
+            alt="Scratch Logo"
+            class="logo"
+          />
+          <nav class="menu">
+            <a href="#">Create</a>
+            <a href="#">Explore</a>
+            <a href="#">Ideas</a>
+            <a href="#">About</a>
+          </nav>
+        </div>
+
+        <div class="navbar-center">
+          <div class="search-container">
+            <span class="search-icon"> 🔍 </span>
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search"
+              style="color: white"
+            />
+          </div>
+        </div>
+
+        <div class="navbar-right">
+          <button class="btn join-btn">Join Scratch</button>
+          <div class="signin-wrapper">
+            <button class="btn signin-btn" id="signInBtn">Sign in</button>
+            <div class="signin-modal" id="signinModal">
+              <div class="arrow-up"></div>
+              <div class="signin-form">
+                <label>Username</label>
+                <input type="text" />
+                <label>Password</label>
+                <input type="password" />
+                <div class="signin-actions">
+                  <button id="submitLogin">Sign in</button>
+                  <a href="#">Need Help?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Modal bạn đã bị lừa -->
+  <div id="youGotTrickedModal" class="tricked-modal hidden">
+    <div class="modal-content">
+      <p>Bạn đã bị lừa!</p>
+      <button id="closeTrickedModal">Đóng</button>
+    </div>
+  </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <h1>Create stories, games, and animations</h1>
+            <h2>Share with others around the world</h2>
+            <div class="hero-buttons">
+              <button class="btn-primary">✨ Start Creating</button>
+              <button class="btn-secondary">⚡ Join</button>
+            </div>
+          </div>
+
+          <div class="hero-video">
+            <img
+              src="https://scratch.mit.edu/svgs/intro/video-image.svg"
+              alt="Intro Video"
+              class="video-image"
+            />
+            <button class="btn-watch">Watch Video</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUB NAVIGATION -->
+    <section class="subnav">
+      <div class="container subnav-buttons">
+        <button>About Scratch</button>
+        <button>For Parents</button>
+        <button>For Educators</button>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="featured">
+      <div class="container">
+        <h3>Featured Projects</h3>
+        <div class="carousel">
+          <button class="arrow left">←</button>
+          <div class="carousel-items">
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1191898953.png"
+              />
+              <p>Project 1</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1193097466.png"
+              />
+              <p>Project 2</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1055566782.png"
+              />
+              <p>Project 3</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1195704801.png"
+              />
+              <p>Project 4</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1195704801.png"
+              />
+              <p>Project 5</p>
+            </div>
+          </div>
+          <button class="arrow right">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="container">
+        <h3>Most Liked Projects</h3>
+        <div class="carousel">
+          <button class="arrow left">←</button>
+          <div class="carousel-items">
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1191898953.png"
+              />
+              <p>Project 1</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1193097466.png"
+              />
+              <p>Project 2</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1055566782.png"
+              />
+              <p>Project 3</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1195704801.png"
+              />
+              <p>Project 4</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1195704801.png"
+              />
+              <p>Project 5</p>
+            </div>
+          </div>
+          <button class="arrow right">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="container">
+        <h3>Trending Projects</h3>
+        <div class="carousel">
+          <button class="arrow left">←</button>
+          <div class="carousel-items">
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1191898953.png"
+              />
+              <p>Project 1</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1193097466.png"
+              />
+              <p>Project 2</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1055566782.png"
+              />
+              <p>Project 3</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1195704801.png"
+              />
+              <p>Project 4</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1195704801.png"
+              />
+              <p>Project 5</p>
+            </div>
+          </div>
+          <button class="arrow right">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED STUDIOS -->
+    <section class="featured">
+      <div class="container">
+        <h3>Featured Studios</h3>
+        <div class="carousel">
+          <button class="arrow left">←</button>
+          <div class="carousel-items">
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/galleries/thumbnails/36381905.png"
+              />
+              <p>Studio 1</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/galleries/thumbnails/36380237.png"
+              />
+              <p>Studio 2</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/galleries/thumbnails/36321875.png"
+              />
+              <p>Studio 3</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/galleries/thumbnails/34417106.png"
+              />
+              <p>Studio 4</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://uploads.scratch.mit.edu/projects/thumbnails/1055566782.png"
+              />
+              <p>Project 3</p>
+            </div>
+          </div>
+          <button class="arrow right">→</button>
+        </div>
+      </div>
+    </section>
+  </body>
+   <script src="script.js"></script>
+</html>

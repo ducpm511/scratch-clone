@@ -1,0 +1,387 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color: white;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #855cd6;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-bottom: 1px solid #7853c2;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: 16px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 16px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.search-box::placeholder {
+  color: white;
+  opacity: 1; /* đảm bảo không bị mờ */
+}
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 16px;
+  pointer-events: none;
+}
+.search-box {
+  width: 200px;
+  padding: 6px 10px 6px 40px; 
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  height: 40px;
+  width: 340px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #855cd6;
+  color: white;
+  padding: 64px 0;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 500px;
+  width: 60%;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 16px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #ffd500;
+  color: black;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #855cd6;
+}
+
+.hero-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://scratch.mit.edu/svgs/intro/background-cropped.svg")
+    no-repeat center center;
+  background-size: cover;
+  border-radius: 8px;
+  width: 40%;
+}
+
+.video-placeholder {
+  width: 220px;
+  height: 130px;
+  background-color: #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.btn-watch {
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: #855cd6;
+  border: none;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* SUBNAV SECTION */
+.subnav {
+  background-color: #f0f8ff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.subnav-buttons button {
+  background-color: #855cd6;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 20px;
+  margin: 0 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* FEATURED SECTIONS */
+.featured {
+  padding: 40px 0;
+}
+
+.featured h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 0 155px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.carousel-items {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel-items::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.card {
+  min-width: 150px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 150px;
+  border-radius: 4px;
+}
+
+.arrow {
+  background-color: #855cd6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.join-btn:hover,
+.signin-btn:hover {
+  background-color: #7e3ca6;
+  border-radius: 4px;
+}
+
+.signin-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.signin-modal {
+  display: none;
+  position: absolute;
+  top: 38px;
+  right: 0;
+  width: 240px;
+  background-color: #855cd6;
+  color: white;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.arrow-up {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #855cd6;
+}
+
+.signin-form label {
+  font-weight: bold;
+  display: block;
+  margin: 30px 0 15px;
+}
+
+.signin-form input {
+  width: 204px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.signin-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.signin-actions button {
+  background-color: white;
+  color: #855cd6;
+  border: none;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signin-actions a {
+  color: white;
+  font-size: 0.85em;
+  text-decoration: underline;
+}
+
+.tricked-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.tricked-modal .modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.tricked-modal .modal-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.tricked-modal .modal-content button {
+  padding: 8px 16px;
+  background: #9933cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
